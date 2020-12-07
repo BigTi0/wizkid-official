@@ -6,8 +6,9 @@ body {
 p {
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
+    background-color: #043038;
+    color: #13ad6d;
+    font-size: 500%;
     width: 100%;
     height: 50vh;
 }
