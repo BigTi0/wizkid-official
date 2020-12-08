@@ -33,14 +33,26 @@ aside {
     margin-right: 200px;
 }
 
+.wiz-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .wiz-logo img {
     height: auto;
-    width: 230px;
-    margin-bottom: -70px;
+    width: 280px;
+    margin-bottom: -35px;
 }
 
 .mil-logo img {
     width: 500px;
     height: auto;
     margin-top: 0;
+}
+
+.header-text a {
+    text-decoration: none;
+    color: black;
+    border-style: solid;
 }
