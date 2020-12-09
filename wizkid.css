@@ -15,7 +15,7 @@ body {
 } */
 
 
-/* ------------ Header -------------- */
+/* ----------------------------Header-------------------------------- */
 
 .header {
     background-image: url("./Images/Wizkid_PC.jpg");
@@ -66,7 +66,7 @@ aside {
     color: black;
     border: 0.5px solid;
     font-size: 20px;
-    font-weight: 0.5;
+    font-weight: 0.5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,4 +75,13 @@ aside {
 a:hover {
     column-gap: 0px;
     zoom: 130%;
+}
+
+
+/* ------------------------------Music Section------------------------ */
+
+.music {
+    height: 80vh;
+    width: 100%;
+    background-color: #d7cfbd;
 }
