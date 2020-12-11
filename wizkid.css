@@ -71,7 +71,8 @@ aside {
 
 .wiz-logo,
 .mil-logo,
-.header-link {
+.header-link,
+.youtube-text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,11 +103,6 @@ aside {
 
 
 /* ------------------------------Music Section------------------------ */
-
-.music {
-    height: 80vh;
-    width: 100%;
-}
 
 .music-image {
     width: 250px;
@@ -148,3 +144,18 @@ aside {
 
 
 /* ---------------------------Videos-------------------------------- */
+
+.videos {
+    display: flex;
+}
+
+iframe {
+    width: 50%;
+    height: 370px;
+}
+
+.youtube {
+    width: 200px;
+    height: 20px;
+    margin-top: 15px;
+}
