@@ -1,6 +1,28 @@
 body {
     margin: 0;
     padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: black;
+    border: 0.5px solid;
+}
+
+.btn:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -28,6 +50,8 @@ body {
     align-items: center;
     justify-content: flex-end;
     border-bottom: 5px solid #9da49d;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 aside {
@@ -60,21 +84,9 @@ aside {
 }
 
 .header-link a {
-    width: 180px;
-    height: 30px;
-    text-decoration: none;
-    color: black;
-    border: 0.5px solid;
+    width: 168px;
+    height: 26px;
     font-size: 20px;
-    font-weight: 0.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-a:hover {
-    column-gap: 0px;
-    zoom: 130%;
 }
 
 
@@ -84,4 +96,51 @@ a:hover {
     height: 80vh;
     width: 100%;
     background-color: #d7cfbd;
+}
+
+.music-header {
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 65px;
+    padding: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.music-image {
+    width: 250px;
+    height: 250px;
+}
+
+.available-music {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20PX;
+}
+
+.music-btn {
+    width: 80px;
+    height: 20px;
+}
+
+.music-info {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-text {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
