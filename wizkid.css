@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     /* font-family: 'Roboto', sans-serif; */
+    background: #d7cfbd;
 }
 
 .btn {
@@ -23,6 +24,16 @@ body {
 a {
     text-decoration: none;
     color: black;
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 65px;
+    font-style: italic;
+    padding: 20px;
+    font-family: 'Dancing Script', cursive;
 }
 
 
@@ -95,16 +106,6 @@ aside {
 .music {
     height: 80vh;
     width: 100%;
-    background-color: #d7cfbd;
-}
-
-.music-header {
-    display: flex;
-    justify-content: center;
-    font-weight: 100;
-    font-size: 65px;
-    padding: 20px;
-    font-family: 'Dancing Script', cursive;
 }
 
 .music-image {
@@ -144,3 +145,6 @@ aside {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+
+
+/* ---------------------------Videos-------------------------------- */
