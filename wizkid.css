@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     /* font-family: 'Roboto', sans-serif; */
-    background: #d7cfbd;
+    background: #b7b2a5;
 }
 
 .btn {
@@ -36,6 +36,12 @@ a {
     font-family: 'Dancing Script', cursive;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* ----------------------------Header-------------------------------- */
 
@@ -45,9 +51,6 @@ a {
     background-position: left;
     width: 100%;
     height: 100vh;
-    display: flex;
-    /* flex-flow: column; */
-    align-items: center;
     justify-content: flex-end;
     border-bottom: 5px solid #9da49d;
     font-family: 'Roboto', sans-serif;
@@ -58,67 +61,45 @@ aside {
     margin-right: 200px;
 }
 
-.wiz-logo,
-.mil-logo,
-.header-link,
-.youtube-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
+}
 .wiz-logo img {
     height: auto;
     width: 280px;
     margin-bottom: -35px;
 }
-
 .mil-logo img {
     width: 500px;
     height: auto;
     margin-top: 0;
 }
-
 .header-link {
     column-gap: 20px;
     width: 500px;
 }
-
 .header-link a {
     width: 168px;
     height: 26px;
     font-size: 20px;
 }
 
-
 /* ------------------------------Music Section------------------------ */
-
 .music-image {
     width: 250px;
     height: 250px;
 }
-
 .available-music {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     column-gap: 20PX;
 }
-
 .music-btn {
     width: 80px;
     height: 20px;
 }
-
 .music-info {
     width: inherit;
     height: inherit;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
-
 .music-text {
     margin-block-start: 0;
     margin-block-end: 0;
@@ -131,27 +112,21 @@ aside {
     font-weight: 400;
 }
 
-
 /* ---------------------------Videos-------------------------------- */
-
-.videos {
-    display: flex;
-}
-
 iframe {
     width: 50%;
     height: 370px;
 }
-
 .youtube {
     width: 200px;
     height: 20px;
     margin-top: 15px;
 }
 
-
 /* ------------------------Footer--------------------------- */
-
+.footer-content {
+    margin-top: 15px;
+}
 .footer-header {
     font-family: 'Sacramento', cursive;
     color: black;
@@ -160,32 +135,43 @@ iframe {
     margin-top: 30px;
     font-weight: 700;
     line-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-
 .favicon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     column-gap: 10px;
 }
-
 .favicon a img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     color: #9da49d;
 }
-
 .favicon a img:hover {
     transform: scale(1.3);
     transition: 0.5s;
 }
-
-form {}
-
-.join-btn,
-.label {
-    color: #9da49d;
+.form {
+    color: rgb(98, 93, 96);
+    margin-left: 20px;
+}
+.join-btn {
+    text-transform: uppercase;
+    color: rgb(98, 93, 96);
+    border: 0.5px solid;
+    background-color: transparent;
+    padding: 4px;
+}
+.join-btn:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+#email {
+    background-color: transparent;
+}
+input[type=email] {
+    border: 1px solid rgb(98, 93, 96);
+    padding: 4px;
+}
+#copyright {
+    color: rgb(98, 93, 96);
+    font-size: xx-small;
+    margin-top: 40px;
 }

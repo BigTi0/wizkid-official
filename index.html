@@ -16,17 +16,17 @@
 
 <body>
     <!---------------------------------Header Section----------------------------->
-    <div class="header">
+    <div class="header flex">
         <section>
             <aside>
-                <div class="wiz-logo">
+                <div class="wiz-logo flex">
                     <img src="./Images/WizkidLogo.svg">
                 </div>
-                <div class="mil-logo">
+                <div class="mil-logo flex">
                     <img src="./Images/MadeInLagos.png">
                 </div>
             </aside>
-            <div class="header-link">
+            <div class="header-link flex">
                 <a class="header-link btn" href="#">Listen Now</a>
                 <a class="header-link btn" href="#">Watch Now</a>
             </div>
@@ -38,10 +38,10 @@
         <div class="h1">
             Music
         </div>
-        <div class="available-music">
+        <div class="available-music flex">
             <div>
                 <img class="music-image" src="./Images/cover-lagos.jpg"></img>
-                <div class="music-info">
+                <div class="music-info flex">
                     <P class="music-text">
                         Made In Lagos
                     </P>
@@ -52,7 +52,7 @@
             </div>
             <div>
                 <img class="music-image" src="./Images/cover-joro.jpg"></img>
-                <div class="music-info">
+                <div class="music-info flex">
                     <p class="music-text">
                         Joro
                     </p>
@@ -63,7 +63,7 @@
             </div>
             <div>
                 <img class="music-image" src="./Images/cover-otherside.jpg"></img>
-                <div class="music-info">
+                <div class="music-info flex">
                     <p class="music-text">
                         Sounds from the other side
                     </p>
@@ -79,22 +79,22 @@
             Videos
         </div>
         <div>
-            <div class="videos">
+            <div class="videos flex">
                 <iframe src="https://www.youtube.com/embed/veIK9yEabNc" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe src="https://www.youtube.com/embed/4oseK1D6ru0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="youtube-text">
+            <div class="youtube-text flex">
                 <a class="btn youtube" href="youtube.com">Watch more videos on youtube</a>
             </div>
 
     </section>
 
     <footer>
-        <div class="footer-header">
+        <div class="footer-header flex">
             Follow + Join
         </div>
-        <div>
-            <div class="favicon">
+        <div class="flex footer-content">
+            <div class="favicon flex">
                 <a href="http://">
                     <img src="./Images/icons8-facebook-f.svg" alt="">
                 </a>
@@ -118,13 +118,18 @@
                 </a>
             </div>
             <div>
-                <form action="">
+                <form class="form" action="">
                     <label class="label" for="email"></label>
                     <input type="email" id="email" name="email" placeholder="EMAIL ADDRESS">
-                    <input type="submit" value="JOIN" class="btn join-btn">
+                    <input type="submit" value="JOIN" class="join-btn">
                 </form>
             </div>
+
         </div>
+        <div class="flex" id="copyright">
+            &copy;2020 Oyeleke Tioluwani
+        </div>
+
 
     </footer>
 </body>
@@ -135,5 +140,6 @@ background-color: #4b0f1a">
     </div>
 
 </section>
+
 
 </html>
