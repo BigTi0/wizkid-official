@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    /* font-family: 'Roboto', sans-serif; */
-    background: #b7b2a5;
+    font-family: 'Roboto', sans-serif;
+    background: #dbd3c0;
 }
 
 .btn {
@@ -29,11 +29,11 @@ a {
 .h1 {
     display: flex;
     justify-content: center;
-    font-weight: 100;
-    font-size: 65px;
+    font-weight: 400;
+    font-size: 100px;
     font-style: italic;
-    padding: 20px;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Backlash Script W05 Regular", sans-serif;
+    padding: 0;
 }
 
 .flex {
@@ -45,10 +45,10 @@ a {
 
 /* ----------------------------Header-------------------------------- */
 
-.header {
-    background-image: url("./Images/Wizkid_PC.jpg");
+.header-wrapper {
+    background-image: linear-gradient(transparent, transparent, #ddd5c2), url("./Images/Wizkid_PC.jpg");
     background-size: cover;
-    background-position: left;
+    background-position: bottom left;
     width: 100%;
     height: 100vh;
     justify-content: flex-end;
@@ -57,49 +57,119 @@ a {
     font-weight: 100;
 }
 
-aside {
-    margin-right: 200px;
+.header {
+    height: 100vh;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-}
 .wiz-logo img {
-    height: auto;
-    width: 280px;
-    margin-bottom: -35px;
+    width: 250px;
+    margin-bottom: -30px;
 }
+
 .mil-logo img {
-    width: 500px;
-    height: auto;
-    margin-top: 0;
+    width: 450px;
 }
+
 .header-link {
-    column-gap: 20px;
+    column-gap: 15px;
     width: 500px;
 }
+
 .header-link a {
-    width: 168px;
-    height: 26px;
-    font-size: 20px;
+    padding: 7px;
+    width: 130px;
+    height: 6px;
+    font-size: 15px;
 }
+
+@media screen and (max-width: 720px) {
+    .header-wrapper {
+        background-image: linear-gradient(transparent, transparent, transparent, #ddd5c2), url("./Images/Wizkid_Mobile.jpg");
+        background-position: top;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+    .header {
+        align-items: center;
+        width: 100%;
+    }
+    .logo-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+    .wiz-logo img {
+        width: 230px;
+        height: 90px;
+    }
+    .mil-logo img {
+        width: 90%;
+    }
+    .header-link {
+        width: 95%;
+    }
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .videos {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .header-link a {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .header-link a {
+        font-size: 8px;
+        display: flex;
+    }
+}
+
 
 /* ------------------------------Music Section------------------------ */
+
+.music {
+    width: 100%;
+    height: 70vh;
+    padding-top: 20px;
+}
+
 .music-image {
     width: 250px;
     height: 250px;
 }
+
 .available-music {
     column-gap: 20PX;
 }
+
 .music-btn {
     width: 80px;
     height: 20px;
+    margin-block-start: 0.5em;
 }
+
 .music-info {
     width: inherit;
     height: inherit;
     flex-direction: column;
 }
+
 .music-text {
     margin-block-start: 0;
     margin-block-end: 0;
@@ -112,46 +182,112 @@ aside {
     font-weight: 400;
 }
 
+@media screen and (max-width: 768px) {
+    div #mil {
+        order: 2;
+    }
+    div #sfos {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    div #joro {
+        order: 3;
+    }
+    .music-image {
+        width: 300px;
+        height: auto;
+    }
+    #iframe {
+        width: 100%;
+        height: 30vh;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .favicon {
+        width: 70%;
+    }
+    #favicon {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+
 /* ---------------------------Videos-------------------------------- */
+
+.video-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.video-section {
+    background-image: linear-gradient(#ddd5c2, #b7b3a6)
+}
+
 iframe {
     width: 50%;
     height: 370px;
 }
+
 .youtube {
     width: 200px;
     height: 20px;
     margin-top: 15px;
 }
 
+.ytext-wrapper {
+    background: #b7b3a6;
+}
+
+
 /* ------------------------Footer--------------------------- */
+
+.footer-wrapper {
+    background: #b7b3a6;
+}
+
 .footer-content {
     margin-top: 15px;
 }
+
 .footer-header {
-    font-family: 'Sacramento', cursive;
+    font-family: "Backlash Script W05 Regular", sans-serif;
     color: black;
-    text-transform: uppercase;
-    font-size: 35px;
-    margin-top: 30px;
-    font-weight: 700;
+    font-size: 100px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-weight: 100;
     line-height: 50px;
+    margin-block-end: 0;
+    margin-block-start: 0;
 }
+
 .favicon {
     column-gap: 10px;
 }
+
 .favicon a img {
     width: 15px;
     height: 15px;
     color: #9da49d;
 }
+
 .favicon a img:hover {
     transform: scale(1.3);
     transition: 0.5s;
 }
+
 .form {
     color: rgb(98, 93, 96);
     margin-left: 20px;
 }
+
 .join-btn {
     text-transform: uppercase;
     color: rgb(98, 93, 96);
@@ -159,19 +295,24 @@ iframe {
     background-color: transparent;
     padding: 4px;
 }
+
 .join-btn:hover {
     transform: scale(1.3);
     transition: 0.5s;
 }
+
 #email {
     background-color: transparent;
 }
+
 input[type=email] {
     border: 1px solid rgb(98, 93, 96);
     padding: 4px;
 }
+
 #copyright {
     color: rgb(98, 93, 96);
     font-size: xx-small;
-    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 5px;
 }

@@ -12,13 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fast.fonts.net/cssapi/b885084f-d0ee-4797-ba92-a918c4fa85e7.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/zgd2ofq.css">
 </head>
 
 <body>
     <!---------------------------------Header Section----------------------------->
-    <div class="header flex">
-        <section>
-            <aside>
+
+    <div class="header-wrapper flex">
+        <section class="header flex">
+            <aside class="logo-wrapper">
                 <div class="wiz-logo flex">
                     <img src="./Images/WizkidLogo.svg">
                 </div>
@@ -27,19 +30,20 @@
                 </div>
             </aside>
             <div class="header-link flex">
-                <a class="header-link btn" href="#">Listen Now</a>
-                <a class="header-link btn" href="#">Watch Now</a>
+                <a class="header-link btn" href="#"> <span class="text">Listen Now</span></a>
+                <a class="header-link btn" href="#"> <span class="text">Watch Now</span></a>
             </div>
 
         </section>
     </div>
+
     <!--------------------------------Music Section-------------------------------------->
     <section class="music">
         <div class="h1">
             Music
         </div>
         <div class="available-music flex">
-            <div>
+            <div id="mil">
                 <img class="music-image" src="./Images/cover-lagos.jpg"></img>
                 <div class="music-info flex">
                     <P class="music-text">
@@ -50,7 +54,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div id="joro">
                 <img class="music-image" src="./Images/cover-joro.jpg"></img>
                 <div class="music-info flex">
                     <p class="music-text">
@@ -61,8 +65,8 @@
                     </p>
                 </div>
             </div>
-            <div>
-                <img class="music-image" src="./Images/cover-otherside.jpg"></img>
+            <div id="sfos">
+                <img class="music-image flex" src="./Images/cover-otherside.jpg"></img>
                 <div class="music-info flex">
                     <p class="music-text">
                         Sounds from the other side
@@ -75,63 +79,68 @@
         </div>
     </section>
     <section class="video-section">
-        <div class="h1">
+        <div class="h1 video-header">
             Videos
         </div>
         <div>
             <div class="videos flex">
-                <iframe src="https://www.youtube.com/embed/veIK9yEabNc" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/4oseK1D6ru0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="iframe" src="https://www.youtube.com/embed/veIK9yEabNc" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="iframe" src="https://www.youtube.com/embed/4oseK1D6ru0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="youtube-text flex">
-                <a class="btn youtube" href="youtube.com">Watch more videos on youtube</a>
+            <div class="ytext-wrapper">
+                <div class="youtube-text flex">
+                    <a class="btn youtube" href="youtube.com">Watch more videos on youtube</a>
+                </div>
             </div>
 
     </section>
 
     <footer>
-        <div class="footer-header flex">
-            Follow + Join
-        </div>
-        <div class="flex footer-content">
-            <div class="favicon flex">
-                <a href="http://">
-                    <img src="./Images/icons8-facebook-f.svg" alt="">
-                </a>
-                <a href="http://">
-                    <img src="./Images/icons8-twitter.svg" alt="">
-                </a>
-                <a href="http://">
-                    <img src="./Images/icons8-instagram.svg" alt="">
-                </a>
-                <a href="http://">
-                    <img src="./Images/icons8-play-button.svg">
-                </a>
-                <a href="http://">
-                    <img src="./Images/icons8-soundcloud.svg" alt="">
-                </a>
-                <a href="http://">
-                    <img src="./Images/icons8-spotify.svg" alt="">
-                </a>
-                <a href="http://">
-                    <img src="./Images/icons8-apple-logo.svg">
-                </a>
-            </div>
-            <div>
-                <form class="form" action="">
-                    <label class="label" for="email"></label>
-                    <input type="email" id="email" name="email" placeholder="EMAIL ADDRESS">
-                    <input type="submit" value="JOIN" class="join-btn">
-                </form>
-            </div>
+        <div class="footer-wrapper">
+            <h2 class="footer-header flex">
+                Follow + Join
+            </h2>
+            <div class="flex footer-content">
+                <div class="favicon flex">
+                    <a href="http://">
+                        <img id="favicon" src="./Images/icons8-facebook-f.svg" alt="">
+                    </a>
+                    <a href="http://">
+                        <img id="favicon" src="./Images/icons8-twitter.svg" alt="">
+                    </a>
+                    <a href="http://">
+                        <img id="favicon" src="./Images/icons8-instagram.svg" alt="">
+                    </a>
+                    <a href="http://">
+                        <img id="favicon" src="./Images/icons8-play-button.svg">
+                    </a>
+                    <a href="http://">
+                        <img id="favicon" src="./Images/icons8-soundcloud.svg" alt="">
+                    </a>
+                    <a href="http://">
+                        <img id="favicon" src="./Images/icons8-spotify.svg" alt="">
+                    </a>
+                    <a href="http://">
+                        <img id="favicon" src="./Images/icons8-apple-logo.svg">
+                    </a>
+                </div>
+                <div>
+                    <form class="form" action="">
+                        <label class="label" for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="EMAIL ADDRESS">
+                        <input type="submit" value="JOIN" class="join-btn">
+                    </form>
+                </div>
 
-        </div>
-        <div class="flex" id="copyright">
-            &copy;2020 Oyeleke Tioluwani
+            </div>
+            <div class="flex" id="copyright">
+                &copy;2020 Oyeleke Tioluwani
+            </div>
         </div>
 
 
     </footer>
+
 </body>
 <section style="height: 50vh; width: 100%; display: flex; align-items: center; justify-content: center;
 background-color: #4b0f1a">
