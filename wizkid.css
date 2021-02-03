@@ -1,318 +1,303 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background: #dbd3c0;
-}
-
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: black;
-    border: 0.5px solid;
-}
-
-.btn:hover {
-    transform: scale(1.3);
-    transition: 0.5s;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.h1 {
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
-    font-size: 100px;
-    font-style: italic;
-    font-family: "Backlash Script W05 Regular", sans-serif;
-    padding: 0;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* ----------------------------Header-------------------------------- */
-
-.header-wrapper {
-    background-image: linear-gradient(transparent, transparent, #ddd5c2), url("./Images/Wizkid_PC.jpg");
-    background-size: cover;
-    background-position: bottom left;
-    width: 100%;
-    height: 100vh;
-    justify-content: flex-end;
-    border-bottom: 5px solid #9da49d;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-
-.header {
-    height: 100vh;
-    width: 60%;
-    flex-direction: column;
-    align-items: center;
-}
-
-.wiz-logo img {
-    width: 250px;
-    margin-bottom: -30px;
-}
-
-.mil-logo img {
-    width: 450px;
-}
-
-.header-link {
-    column-gap: 15px;
-    width: 500px;
-}
-
-.header-link a {
-    padding: 7px;
-    width: 130px;
-    height: 6px;
-    font-size: 15px;
-}
-
-@media screen and (max-width: 720px) {
-    .header-wrapper {
-        background-image: linear-gradient(transparent, transparent, transparent, #ddd5c2), url("./Images/Wizkid_Mobile.jpg");
-        background-position: top;
-        width: 100%;
-        height: 100vh;
-        margin: 0;
+    body {
         padding: 0;
+        margin: 0;
+        background-color: #dbd3c0;
+    }
+    
+    .flex {
+        display: flex;
+        align-items: center;
         justify-content: center;
     }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: "roboto", sans-serif;
+        font-weight: 300;
+        width: 160px;
+        height: 22px;
+        text-align: center;
+        /* border: 1px solid black; */
+    }
+    
+    .btn:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+    
+    .h1 {
+        display: flex;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 100px;
+        font-style: italic;
+        font-family: "Backlash Script W05 Regular", sans-serif;
+        padding: 0;
+    }
+    
+    button {
+        border: 1px solid black;
+        background-color: transparent;
+    }
+    
+    .hover:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+    
+    .btn {
+        font-size: 17px;
+    }
+    /* -----------------Landing Page-------------------------------------- */
+    
     .header {
-        align-items: center;
         width: 100%;
+        height: 99.3vh;
+        background-image: linear-gradient( #ddd5c200, #ddd5c200, #ddd5c2), url("./Images/Wizkid_PC.jpg");
+        background-size: cover;
+        background-position: bottom center;
+        border-bottom: 5px #9da49d solid;
     }
-    .logo-wrapper {
-        display: flex;
-        flex-direction: column;
+    
+    #wiz-logo {
+        width: 270px;
+        height: 120px;
+    }
+    
+    #mil-logo {
+        width: 470px;
+        height: 142px;
+        margin-top: -20px;
+    }
+    
+    .header-container {
+        width: 83%;
         height: 100vh;
-        justify-content: space-between;
-        padding-top: 40px;
-    }
-    .wiz-logo img {
-        width: 230px;
-        height: 90px;
-    }
-    .mil-logo img {
-        width: 90%;
-    }
-    .header-link {
-        width: 95%;
-    }
-    .text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .videos {
         flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .logo-wrapper {
+        text-align: center;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .btn-wrapper {
+        column-gap: 10px;
         width: 100%;
     }
-}
-
-@media screen and (max-width: 411px) {
-    .header-link a {
-        font-size: 10px;
+    
+    button {
+        border: 1px solid black;
+        background-color: transparent;
     }
-}
-
-@media screen and (max-width: 310px) {
-    .header-link a {
-        font-size: 8px;
-        display: flex;
+    
+    @media screen and (max-width: 701px) {
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient( #ddd5c200, #ddd5c200, #ddd5c2), url("./Images/Wizkid_Mobile.jpg");
+            background-size: cover;
+            background-position: top center;
+            border-bottom: 5px #9da49d solid;
+            padding-left: 0;
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+        .header-container {
+            width: 100%;
+            align-items: center;
+        }
+        .logo-wrapper {
+            height: 100vh;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+        }
+        #mil-logo {
+            margin-bottom: 10px;
+        }
+        #wiz-logo {
+            height: 90px;
+        }
     }
-}
-
-
-/* ------------------------------Music Section------------------------ */
-
-.music {
-    width: 100%;
-    height: 70vh;
-    padding-top: 20px;
-}
-
-.music-image {
-    width: 250px;
-    height: 250px;
-}
-
-.available-music {
-    column-gap: 20PX;
-}
-
-.music-btn {
-    width: 80px;
-    height: 20px;
-    margin-block-start: 0.5em;
-}
-
-.music-info {
-    width: inherit;
-    height: inherit;
-    flex-direction: column;
-}
-
-.music-text {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
-
-@media screen and (max-width: 768px) {
-    div #mil {
-        order: 2;
-    }
-    div #sfos {
-        order: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    div #joro {
-        order: 3;
-    }
-    .music-image {
-        width: 300px;
+    /* ----------------------Music Section----------------------- */
+    
+    .music {
+        width: 100%;
         height: auto;
+        padding-top: 20px;
     }
-    #iframe {
-        width: 100%;
-        height: 30vh;
+    
+    .music-image {
+        width: 250px;
+        height: 250px;
     }
-    .footer-content {
-        display: flex;
+    
+    .available-music {
+        column-gap: 20PX;
+    }
+    
+    .music-btn {
+        width: 80px;
+        height: 20px;
+        margin-block-start: 0.5em;
+    }
+    
+    .music-info {
+        width: inherit;
+        height: inherit;
         flex-direction: column;
     }
+    
+    .music-text {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+    
+    @media screen and (max-width: 701px) {
+        .available-music {
+            flex-direction: column;
+        }
+        .music-image {
+            width: 350px;
+            height: 350px;
+        }
+        #joro {
+            margin-top: 20px;
+        }
+        #sfos {
+            margin-top: 20px;
+        }
+    }
+    /* --------------------Video Section--------------------------- */
+    
+    .video-section {
+        width: 100%;
+        height: auto;
+        background: #b7b3a6;
+    }
+    
+    .video-header {
+        margin-top: 20px;
+    }
+    
+    iframe {
+        width: 50%;
+        height: 370px;
+    }
+    
+    .youtube-text {
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    @media screen and (max-width: 701px) {
+        .videos {
+            flex-direction: column;
+        }
+        iframe {
+            width: 100%;
+            height: 250px;
+        }
+    }
+    /* ------------------------Footer--------------------------- */
+    
+    .footer-wrapper {
+        background: #b7b3a6;
+    }
+    
+    .footer-content {
+        margin-top: 15px;
+    }
+    
+    .footer-header {
+        font-family: "Backlash Script W05 Regular", sans-serif;
+        color: black;
+        font-size: 100px;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        font-weight: 100;
+        line-height: 50px;
+        margin-block-end: 0;
+        margin-block-start: 0;
+    }
+    
     .favicon {
-        width: 70%;
+        column-gap: 10px;
+        width: 15px;
+        height: 15px;
+        color: #9da49d;
     }
-    #favicon {
-        width: 20px;
-        height: 20px;
-        margin-bottom: 15px;
+    
+    .favicon-wrapper {
+        width: 25%;
     }
-}
-
-
-/* ---------------------------Videos-------------------------------- */
-
-.video-header {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.video-section {
-    background-image: linear-gradient(#ddd5c2, #b7b3a6)
-}
-
-iframe {
-    width: 50%;
-    height: 370px;
-}
-
-.youtube {
-    width: 200px;
-    height: 20px;
-    margin-top: 15px;
-}
-
-.ytext-wrapper {
-    background: #b7b3a6;
-}
-
-
-/* ------------------------Footer--------------------------- */
-
-.footer-wrapper {
-    background: #b7b3a6;
-}
-
-.footer-content {
-    margin-top: 15px;
-}
-
-.footer-header {
-    font-family: "Backlash Script W05 Regular", sans-serif;
-    color: black;
-    font-size: 100px;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    font-weight: 100;
-    line-height: 50px;
-    margin-block-end: 0;
-    margin-block-start: 0;
-}
-
-.favicon {
-    column-gap: 10px;
-}
-
-.favicon a img {
-    width: 15px;
-    height: 15px;
-    color: #9da49d;
-}
-
-.favicon a img:hover {
-    transform: scale(1.3);
-    transition: 0.5s;
-}
-
-.form {
-    color: rgb(98, 93, 96);
-    margin-left: 20px;
-}
-
-.join-btn {
-    text-transform: uppercase;
-    color: rgb(98, 93, 96);
-    border: 0.5px solid;
-    background-color: transparent;
-    padding: 4px;
-}
-
-.join-btn:hover {
-    transform: scale(1.3);
-    transition: 0.5s;
-}
-
-#email {
-    background-color: transparent;
-}
-
-input[type=email] {
-    border: 1px solid rgb(98, 93, 96);
-    padding: 4px;
-}
-
-#copyright {
-    color: rgb(98, 93, 96);
-    font-size: xx-small;
-    padding-top: 30px;
-    padding-bottom: 5px;
-}
+    
+    .favicon a img:hover {
+        transform: scale(1.3);
+        transition: 0.5s;
+    }
+    
+    .form {
+        color: rgb(98, 93, 96);
+    }
+    
+    .form-wrapper {
+        padding-left: 20px;
+    }
+    
+    .join-btn {
+        text-transform: uppercase;
+        color: rgb(98, 93, 96);
+        border: 0.5px solid;
+        background-color: transparent;
+        padding: 4px;
+    }
+    
+    .join-btn:hover {
+        transform: scale(1.3);
+        transition: 0.5s;
+    }
+    
+    #email {
+        background-color: transparent;
+    }
+    
+    input[type=email] {
+        border: 1px solid rgb(98, 93, 96);
+        padding: 4px;
+    }
+    
+    #copyright {
+        color: rgb(98, 93, 96);
+        font-size: xx-small;
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+    
+    @media screen and (max-width: 701px) {
+        .favicon {
+            column-gap: 25px;
+            width: 15px;
+            height: 15px;
+            color: #9da49d;
+        }
+        .favicon-wrapper {
+            column-gap: 10px;
+            width: 35%;
+        }
+    }
