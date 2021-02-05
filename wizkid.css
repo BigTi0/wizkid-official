@@ -195,16 +195,16 @@ button {
     }
     #joro {
         margin-top: 20px;
-        width: 90%;
+        width: 100%;
         height: auto;
     }
     #sfos {
         margin-top: 20px;
-        width: 90%;
+        width: 100%;
         height: auto;
     }
     #mil {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 }
